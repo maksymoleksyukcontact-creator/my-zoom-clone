@@ -3,7 +3,6 @@ import React from 'react'
 import { Button } from './ui/button'
 import { CopyIcon } from 'lucide-react'
 import { cn } from '@/lib/utils'
-import { avatarImages } from '@/constants'
 import { toast } from 'sonner'
 
 interface MeetingCardProps {
@@ -29,15 +28,6 @@ function MeetingCard({ icon, isPreviousMeeting, title, date, buttonIcon1, button
                 <p className="text-base">{date}</p>
             </article>
             <article className="flex flex-wrap items-center justify-between gap-4 mt-9">
-                <div className="flex space-x-[-20px]">
-                    {avatarImages.map((src, index) => (
-                        <Image
-                            key={index} src={src} alt={`Avatar ${index + 1}`}
-                            width={48} height={48}
-                            className={cn("rounded-full border-3 border-[#252A41]")}
-                        />
-                    ))}
-                </div>
                 {!isPreviousMeeting && (
                     <div className='flex gap-4'>
                         <Button onClick={handleClick} className={cn("text-base py-4 rounded-sm cursor-pointer bg-blue-1")}>

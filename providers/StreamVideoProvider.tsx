@@ -2,8 +2,6 @@
 
 import { ReactNode, useEffect, useState } from "react";
 import {
-    Call,
-    StreamCall,
     StreamVideo,
     StreamVideoClient,
 } from "@stream-io/video-react-sdk";
@@ -22,7 +20,7 @@ const StreamVideoProvider = ({ children }: { children: ReactNode }) => {
         if (!user || !isLoaded) return;
         if (!apiKey) throw new Error("Stream api key is missing");
 
-        const client = new StreamVideoClient({
+        const client = StreamVideoClient.getOrCreateInstance({
             apiKey,
             user: {
                 id: user?.id,
@@ -34,7 +32,6 @@ const StreamVideoProvider = ({ children }: { children: ReactNode }) => {
         setVideoClient(client);
 
         return () => {
-            client.disconnectUser();
             setVideoClient(undefined);
         }
 
