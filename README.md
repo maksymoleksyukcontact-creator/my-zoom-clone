@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Zoom Clone — Full-Stack Video Conferencing Platform
 
-## Getting Started
+A high-performance, real-time video conferencing application built with **Next.js (App Router)**, **TypeScript**, and **Tailwind CSS**. This project replicates core Zoom functionalities, allowing users to securely log in, initiate instant meetings, schedule future events, record sessions, and manage participants in real-time.
 
-First, run the development server:
+🚀 **[Live Demo](https://my-zoom-clone-76i97bmnp-maksymoleksyukcontact-creators-projects.vercel.app)**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔋 Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* **Secure Authentication:** Integrated with **Clerk** for robust authentication via social logins (Google, GitHub, etc.) or traditional email/password, ensuring secure access levels.
+* **Instant & Scheduled Meetings:** Quickly start a new meeting with pre-joined camera/mic configuration, or schedule future meetings with specific dates and times.
+* **Advanced Meeting Controls:** Full control over the media stream:
+    * Audio/Video muting and sound adjustments.
+    * Screen sharing and real-time emoji reactions.
+    * Dynamic layouts (Grid view, Speaker view, Speaker left/right).
+* **Participant Management:** Detailed participant list with capabilities to pin, mute/unmute, block, or allow video sharing for individual users.
+* **Meeting Recording:** Record sessions and access them later for review or reference.
+* **Personal Meeting Room:** Every user gets a unique, permanent meeting link for instant connectivity.
+* **History & Upcoming Lists:** Dedicated pages to track past meetings, view upcoming scheduled events, and access recordings.
+* **Responsive UI/UX:** Clean, modern interface built with **shadcn/ui** and **Tailwind CSS**, optimized for flawless performance across desktop, tablet, and mobile screens.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ⚙️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* **Framework:** [Next.js 14+ (App Router)](https://nextjs.org/)
+* **Language:** [TypeScript](https://www.typescriptlang.org/)
+* **Video/Audio SDK:** [GetStream (Stream Video SDK)](https://getstream.io/)
+* **Authentication:** [Clerk](https://clerk.com/)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **UI Components:** [shadcn/ui](https://ui.shadcn.com/)
