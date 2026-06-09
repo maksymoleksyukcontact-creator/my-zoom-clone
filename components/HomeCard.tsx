@@ -11,9 +11,9 @@ interface HomeCardProps {
 
 function HomeCard({ icon, title, description, color, handleClick }: HomeCardProps) {
     return (
-        <div className={`flex flex-col justify-between bg-[${color}] rounded-[14px]
+        <div className={`flex flex-col justify-between rounded-[14px]
                 w-full lg:max-w-[320px] min-h-[260px]
-                px-4 py-6 cursor-pointer`}
+                px-4 py-6 cursor-pointer ${color}`}
             onClick={handleClick}
         >
             <div className='size-12 glassmorphism flex-center rounded-sm'>

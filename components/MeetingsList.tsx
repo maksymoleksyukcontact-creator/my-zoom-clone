@@ -78,14 +78,14 @@ function MeetingsList() {
                 icon="/icons/add-meeting.svg"
                 title="Create Meeting"
                 description="Create a new recording"
-                color="#FF742E"
+                color="bg-[#FF742E]"
                 handleClick={() => setMeeting('isCreateMeeting')}
             />
             <HomeCard
                 icon="/icons/join-meeting.svg"
                 title="Join Meeting"
                 description="via invitation link"
-                color="#0E78F9"
+                color="bg-[#0E78F9]"
                 handleClick={() => setMeeting('isJoinMeeting')}
 
             />
@@ -93,14 +93,14 @@ function MeetingsList() {
                 icon="/icons/schedule.svg"
                 title="Schedule Meeting"
                 description="Plan your meeting"
-                color="#830EF9"
+                color="bg-[#830EF9]"
                 handleClick={() => setMeeting('isScheduleMeeting')}
             />
             <HomeCard
                 icon="/icons/Video.svg"
                 title="View Recordings"
                 description="Meeting recordings"
-                color="#F9A90E"
+                color="bg-[#F9A90E]"
                 handleClick={() => router.push('/recordings')}
             />
             {!callDetails ? (
